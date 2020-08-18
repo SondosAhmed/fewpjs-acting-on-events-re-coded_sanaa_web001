@@ -9,7 +9,7 @@ function moveDodgerLeft() {
     dodger.style.left = `${left - 1}px`;
   }
 }
-function moveDodgerright() {
+function moveDodgerRight() {
   let leftNumbers = dodger.style.right.replace("px", "");
   let right = parseInt(leftNumbers, 10);
 
@@ -22,6 +22,6 @@ document.addEventListener("keydown", function(e) {
     moveDodgerLeft();
   }
   if (e.key === "ArrowRight") {
-    moveDodgerright();
+    moveDodgerRight();
   }
 });
